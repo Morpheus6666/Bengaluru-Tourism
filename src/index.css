@@ -1,0 +1,429 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: antiquewhite;
+  font-family: Arial, sans-serif;
+}
+
+.navlet {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: medium;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 20px;
+}
+
+
+.hero {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero-desc {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FAD66B;
+  padding: 25px;
+  z-index: 100;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  padding: 0px 40px 30px 40px;
+  min-height: 80vh;
+}
+
+#description{
+  padding: 50px 40px 30px 40px;
+  min-height: 30vh;
+  font-size: 20px;
+  position: relative;
+  left: 30px;
+
+}
+
+.capital-letter{
+  font-weight: 500;
+  font-size: 28px;
+}
+
+#home{
+  background-image: url("https://s7ap1.scene7.com/is/image/incredibleindia/nandi-hills-bangalore-karnataka-1-attr-hero?qlt=82&ts=1742171255239");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex; 
+  flex-direction: column;                
+  align-items: center;           
+  justify-content: center;       
+  color: white;               
+  text-align: center;            
+  position: relative;
+  font-size: 50px;
+}
+
+.inn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+
+.inn-grid a:nth-child(3) {
+  grid-column: 1 / span 2;           /*to spans both columns */
+  justify-self: center;  
+  width: 50%;             
+}
+
+.inn-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 300px;          
+  text-decoration: none;
+  color: white;
+}
+
+.inn-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.inn-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.inn-item-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inn-item-desc {
+  font-size: 1rem;
+}
+
+
+.travel-container1{
+display: flex;
+gap: 20px;
+padding-left: 25px;
+padding-bottom: 50px;
+}
+
+.travel-container2{
+display: flex;
+gap: 20px;
+padding-left: 25px;
+
+}
+
+.travel-mid{
+  height: 300px;
+  width: 450px;
+}
+
+.placesh2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px 0;
+  color: #000000;
+}
+
+/* lines on both sides */
+.placesh2::before,
+.placesh2::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #000000;
+  margin: 0 10px;
+}
+
+
+
+.foods{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  
+}
+
+.food-img{
+  height: 300px;
+  width: 475px;
+}
+#button {
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  padding: 10px 18px;
+  font-size: 25px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.food-desc{
+  position: relative;
+  left: 50px;
+  bottom: 25px;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: 21px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+}
+
+.travel-desc{
+  position: relative;
+  left: 50px;
+  bottom: 25px;
+  padding-top: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: 21px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+}
+
+.Inn-desc{
+  position: relative;
+  left: 50px;
+  bottom: 15px;
+  font-size: 20px;
+}
+
+.slide {
+  display: block;
+  position: relative;  
+  width: 100%;
+  min-width: 100%;
+  height: 600px;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+hr {
+  border: none;          
+  height: 2px;           
+  background-color: #333;
+  width: 80%;
+  margin: 20px auto; 
+  margin-bottom: 30px;
+}
+
+#transporth3{
+  font-size: 24px;
+  padding-left: 45px;
+}
+
+.contact-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: auto;
+  height: 400px;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-updated {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Two-column*/
+.contact-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; 
+  min-height: 60vh;
+}
+
+.contact-container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 45%;          
+  background-color: #000;
+  transform: translateX(-50%);
+}
+
+.contact-left {
+  flex: 1 1 400px; 
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.contact-right {
+  height: 450px;
+  flex: 1 1 250px;
+}
+
+.contact-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-right ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-right ul li {
+  margin-bottom: 5px;
+}
+
+.contact-right ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contact-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.divider{
+  width: 2px;
+  height: 30%;
+  background-color: #d50000;
+  flex-shrink: 0;
+}
+
+/*Feedback Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  width: 450px;
+  max-width: auto;
+  border-radius: 8px;
+}
+
+/* Form */
+.popup-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.popup-box textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.feedback-btn {
+  background-color: #d7b864;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.popup-box button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+
+.thank-you {
+  font-weight: 600;
+  color: green;
+}
+
+footer {
+  text-align: center;
+  margin-top: 110px;
+  padding: 20px 30px;
+  background: #f2f2f2;
+}
